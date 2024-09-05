@@ -6,19 +6,23 @@
             mode="inline"
             theme="dark"
             :items="items"
+            @click="navigateTo"
         ></a-menu>
     </div>
 </template>
 
 <script setup lang="ts">
-import { reactive, watch, h } from 'vue';
+import { reactive } from 'vue';
 import routes from "@/router/routes";
+import { useRouter } from "vue-router";
 
 const state = reactive({
-  selectedKeys: ['1'],
-  openKeys: ['sub1'],
-  preOpenKeys: ['sub1'],
+  selectedKeys: ['demo'],
+  openKeys: ['demo'],
 });
+
+const router = useRouter();
+
 const routes_list = routes.map(item => {
     return {
         title: item.meta.title,
@@ -28,12 +32,11 @@ const routes_list = routes.map(item => {
     }
 })
 const items = reactive(routes_list);
-watch(
-  () => state.openKeys,
-  (_val, oldVal) => {
-    state.preOpenKeys = oldVal;
-  },
-);
+
+
+function navigateTo(route:any):void {
+  router.push(route.item.path);
+}
 </script>
 
 <style scoped>

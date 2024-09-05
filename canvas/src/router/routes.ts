@@ -2,9 +2,15 @@
 const routes: any[] = [
     {
         path: '/',
-        name: 'home',
-        meta: { title: 'canvas图表' },
-        component: () => import('../views/chart.vue')
+        name: 'demo',
+        meta: { title: 'demo' },
+        component: () => import('../views/demo.vue')
+    },
+    {
+        path: '/eraser',
+        name: 'eraser',
+        meta: { title: '橡皮擦实现' },
+        component: () => import('../views/eraser.vue')
     },
 ];
 
