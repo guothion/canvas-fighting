@@ -12,6 +12,12 @@ const routes: any[] = [
         meta: { title: '橡皮擦实现' },
         component: () => import('../views/eraser.vue')
     },
+    {
+        path: '/border-raduis',
+        name: 'borderRadius',
+        meta: { title: '圆角矩形' },
+        component: () => import('../views/borderRadius.vue')
+    }
 ];
 
 
