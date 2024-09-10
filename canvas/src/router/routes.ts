@@ -17,6 +17,12 @@ const routes: any[] = [
         name: 'borderRadius',
         meta: { title: '圆角矩形' },
         component: () => import('../views/borderRadius.vue')
+    },
+    {
+        path: '/arrows',
+        name: 'arrows',
+        meta: { title: '箭头' },
+        component: () => import('../views/arrows.vue')
     }
 ];
 
