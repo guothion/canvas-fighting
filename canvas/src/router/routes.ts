@@ -23,7 +23,13 @@ const routes: any[] = [
         name: 'arrows',
         meta: { title: '箭头' },
         component: () => import('../views/arrows.vue')
-    }
+    },
+    {
+        path: '/signature',
+        name: 'signature',
+        meta: { title: '电子签名' },
+        component: () => import('../views/signature.vue')
+    },
 ];
 
 
