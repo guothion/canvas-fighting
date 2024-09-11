@@ -30,6 +30,12 @@ const routes: any[] = [
         meta: { title: '电子签名' },
         component: () => import('../views/signature.vue')
     },
+    {
+        path: '/image',
+        name: 'image',
+        meta: { title: '图像' },
+        component: () => import('../views/image.vue')
+    },
 ];
 
 
