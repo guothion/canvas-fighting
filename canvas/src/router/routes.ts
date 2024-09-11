@@ -36,6 +36,12 @@ const routes: any[] = [
         meta: { title: '图像' },
         component: () => import('../views/image.vue')
     },
+    {
+        path: '/html',
+        name: 'html',
+        meta: { title: '将DOM节点转换为图片' },
+        component: () => import('../views/html.vue')
+    },
 ];
 
 
