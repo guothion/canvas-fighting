@@ -1,7 +1,7 @@
 
 const routes: any[] = [
     {
-        path: '/',
+        path: '/demo',
         name: 'demo',
         meta: { title: 'demo' },
         component: () => import('../views/demo.vue')

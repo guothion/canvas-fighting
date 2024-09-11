@@ -88,4 +88,9 @@ button{
     line-height: 40px;
     margin: 0 20px;
 }
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
 </style>
