@@ -48,6 +48,12 @@ const routes: any[] = [
         meta: { title: '压缩图片' },
         component: () => import('../views/compressImage.vue')
     },
+    {
+        path: '/enlarge',
+        name: 'enlarge',
+        meta: { title: '放大镜' },
+        component: () => import('../views/enlarge.vue')
+    },
 ];
 
 
