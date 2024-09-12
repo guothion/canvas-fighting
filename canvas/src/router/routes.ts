@@ -42,6 +42,12 @@ const routes: any[] = [
         meta: { title: '将DOM节点转换为图片' },
         component: () => import('../views/html.vue')
     },
+    {
+        path: '/compress-image',
+        name: 'compressImage',
+        meta: { title: '压缩图片' },
+        component: () => import('../views/compressImage.vue')
+    },
 ];
 
 

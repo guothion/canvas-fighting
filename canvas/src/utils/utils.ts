@@ -22,3 +22,14 @@ export function getTwoPointDistance(x:number,y:number,ex:number,ey:number) :numb
 export function average(x:number,y:number):number {
     return (x+y)/2;
 }
+
+export function downloadImage(imageData:any,fileName:string):void {
+    const downloadElement = document.createElement("a");
+    // 创建下载的链接
+    downloadElement.href = imageData;
+    // 下载后文件名
+    downloadElement.download = fileName;
+    document.body.appendChild(downloadElement);
+    downloadElement.click();
+    document.body.removeChild(downloadElement);
+}
