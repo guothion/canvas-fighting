@@ -54,6 +54,18 @@ const routes: any[] = [
         meta: { title: '放大镜' },
         component: () => import('../views/enlarge.vue')
     },
+    {
+        path: '/text',
+        name: 'text',
+        meta: { title: '文本' },
+        component: () => import('../views/text.vue')
+    },
+    {
+        path: '/text-engine',
+        name: 'textEngine',
+        meta: { title: '文本引擎' },
+        component: () => import('../views/textengine.vue')
+    },
 ];
 
 
