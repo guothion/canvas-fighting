@@ -66,6 +66,18 @@ const routes: any[] = [
         meta: { title: '文本引擎' },
         component: () => import('../views/textengine.vue')
     },
+    {
+        path: '/transform',
+        name: 'transform',
+        meta: { title: '变换' },
+        component: () => import('../views/transform.vue')
+    },
+    {
+        path: '/regularPolygon',
+        name: 'regularPolygon',
+        meta: { title: '正多边形绘制' },
+        component: () => import('../views/regularPolygon.vue')
+    },
 ];
 
 
