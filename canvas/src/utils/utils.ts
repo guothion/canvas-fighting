@@ -33,3 +33,7 @@ export function downloadImage(imageData:any,fileName:string):void {
     downloadElement.click();
     document.body.removeChild(downloadElement);
 }
+
+export const isPointInPath: (x:number, y:number,ratio: number, ctx:any) => boolean = (x,y,ratio=1,ctx) =>  {
+    return ctx.isPointInPath(x * ratio, y * ratio)
+}

@@ -78,6 +78,18 @@ const routes: any[] = [
         meta: { title: '正多边形绘制' },
         component: () => import('../views/regularPolygon.vue')
     },
+    {
+        path: '/canvas-event',
+        name: 'canvasEvent',
+        meta: { title: 'canvas-事件' },
+        component: () => import('@/views/canvasEvent.vue')
+    },
+    {
+        path: '/beisaier',
+        name: 'beisaier',
+        meta: { title: '贝塞尔曲线' },
+        component: () => import('@/views/beisaier.vue')
+    },
 ];
 
 
