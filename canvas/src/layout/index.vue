@@ -1,7 +1,7 @@
 <template>
 
     <a-layout class="layout">
-        <a-layout-sider :style="siderStyle">
+        <a-layout-sider :style="siderStyle" v-if="!hideSider">
             <Slide />
         </a-layout-sider>
         <a-layout>
@@ -11,7 +11,7 @@
             <a-layout-content :style="contentStyle">
                 <RouterView />
             </a-layout-content>
-            <a-layout-footer :style="footerStyle">
+            <a-layout-footer :style="footerStyle" v-if="!hideFooter"> 
                 <Footer />
             </a-layout-footer>
         </a-layout>
@@ -24,8 +24,19 @@ import Slide from "./slide.vue";
 import Header from "./header.vue";
 import Footer from "./footer.vue";
 import { RouterView } from "vue-router";
+import { useRoute } from "vue-router";
 
 import type { CSSProperties } from 'vue';
+import { computed } from 'vue';
+const route = useRoute();
+
+const hideSider = computed(() => {
+  return route.meta.hideSider;
+});
+const hideFooter = computed(() => {
+  return route.meta.hideFooter;
+});
+
 const headerStyle: CSSProperties = {
   textAlign: 'center',
   color: '#fff',

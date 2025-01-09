@@ -90,6 +90,12 @@ const routes: any[] = [
         meta: { title: '贝塞尔曲线' },
         component: () => import('@/views/beisaier.vue')
     },
+    {
+        path: '/matrix',
+        name: 'matrix',
+        meta: { title: '黑客帝国',hideSider: true,hideFooter: true },
+        component: () => import('../views/matrix.vue')
+    },
 ];
 
 
