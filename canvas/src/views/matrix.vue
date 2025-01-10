@@ -22,8 +22,8 @@ onMounted(() => {
             wordsArr = words.split(''), //将文字拆分进一个数组
             font_size = 16,  //字体大小
             clumns = w / font_size, //文字降落的列数
-            drops:Number[] = [];
-            // drops: Array<Number> = [];
+            // drops:Number[] = [];
+            drops: Array<Number> = [];
         
         for (var i = 0; i < clumns; i++) {
             drops[i] = 1;

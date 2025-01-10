@@ -96,6 +96,12 @@ const routes: any[] = [
         meta: { title: '黑客帝国',hideSider: true,hideFooter: true },
         component: () => import('../views/matrix.vue')
     },
+    {
+        path: '/filter',
+        name: 'filter',
+        meta: { title: '图片过滤' },
+        component: () => import('../views/filter.vue')
+    }
 ];
 
 
