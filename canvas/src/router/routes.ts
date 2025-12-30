@@ -101,6 +101,12 @@ const routes: any[] = [
         name: 'filter',
         meta: { title: '图片过滤' },
         component: () => import('../views/filter.vue')
+    },
+    {
+        path: '/firework',
+        name: 'firework',
+        meta: { title: '放一个烟花' },
+        component: () => import('../views/firework.vue')
     }
 ];
 
